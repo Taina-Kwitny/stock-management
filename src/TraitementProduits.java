@@ -74,7 +74,7 @@ public class TraitementProduits implements ProduitContract {
                     produits.get(indexProd).setCategorie(scanner.nextLine());
                     break;
                 case 2:
-                    System.out.print("Entrer la nom : ");
+                    System.out.print("Entrer le nom du produit: ");
                     produits.get(indexProd).setNom(scanner.nextLine());
                     break;
                 case 3:
@@ -86,11 +86,11 @@ public class TraitementProduits implements ProduitContract {
                     produits.get(indexProd).setQuantite(scanner.nextInt());
                     break;
                 case 5:
-                    System.out.print("Entrer le Description : ");
+                    System.out.print("Entrer la Description : ");
                     produits.get(indexProd).setDescription(scanner.nextLine());
                     break;
                 default:
-                    System.out.println("Mauvaix choix!");
+                    System.out.println("Ce produit n'est pas disponible Réessayer!");
             }
         } while (choix <= 5);
     }
@@ -213,7 +213,7 @@ public class TraitementProduits implements ProduitContract {
 
         do {
             System.out.println("______ Menu Produits_______"
-                    + "\nFaites un choix"
+                    + "\n Qu'est-ce que vous voulez faire? "
                     + "\n1.- Enregistrer un Produits"
                     + "\n2.- Modifier un produit par son code"
                     + "\n3.- Afficher tous les produits"
